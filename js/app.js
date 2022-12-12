@@ -12,5 +12,10 @@ window.onload = function(){
 }
 
 function initialize(){
-  
+  // create the game board
+  for (let r = 0; r < height; r++){
+    for (let c = 0; c < width; c++){
+      
+    }
+  }
 }
