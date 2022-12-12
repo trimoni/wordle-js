@@ -62,14 +62,14 @@ function update(){
     let currTile = document.getElementById(row.toString() + '-' + c.toString())
     let letter = currTile.innerText
     if (word[c] == letter){
-      tile.classList.add('correct')
+      currTile.classList.add('correct')
       correct += 1
     }
     else if (word.includes(letter)){
-      tile.classList.add('present')
+      currTile.classList.add('present')
     }
     else {
-      tile.classList.add('absent')
+      currTile.classList.add('absent')
     }
 
     if (correct == width){
