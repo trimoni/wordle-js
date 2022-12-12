@@ -42,5 +42,13 @@ function initialize(){
       let currTile = document.getElementById(row.toString() + '-' + col.toString())
       currTile.innerText = ''
     }
+
+    else if (e.code = 'Enter'){
+      update()
+      row += 1 // start new row
+      col = 0 // start at 0 for new row
+    }
+
+    if (!gameOver && row == height)
   })
 }
