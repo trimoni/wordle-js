@@ -61,5 +61,11 @@ function update(){
   for (let c = 0; c < width; c++){
     let currTile = document.getElementById(row.toString() + '-' + col.toString())
     let letter = currTile.innerText
+    if (word[c] == letter){
+      tile.classList.add('correct')
+      correct += 1
+    }
+    
+    }
   }
 }
