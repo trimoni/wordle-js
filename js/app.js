@@ -26,6 +26,8 @@ function initialize(){
 
   document.addEventListener('keyup', (e) => {
     if (gameOver) return
-    
+    if ('KeyA' <= e.code && e.code <= 'KeyZ'){
+      if(col)
+    }
   })
 }
