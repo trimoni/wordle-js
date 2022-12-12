@@ -65,7 +65,8 @@ function update(){
       tile.classList.add('correct')
       correct += 1
     }
-    
+    else if (word.includes(letter)){
+      tile.classList.add('present')
     }
   }
 }
