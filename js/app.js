@@ -71,5 +71,9 @@ function update(){
     else {
       tile.classList.add('absent')
     }
+
+    if (correct == width){
+      gameOver = true
+    }
   }
 }
