@@ -3,3 +3,6 @@ let width = 5
 
 let row = 0
 let col = 0
+
+let gameOver = false
+let word = 'SQUID'
