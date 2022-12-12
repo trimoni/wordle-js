@@ -46,7 +46,9 @@ hr {
 }
 
 .present {
-
+  background-color: #C9B458;
+  color: white;
+  border-color: white;
 }
 
 .absent {
