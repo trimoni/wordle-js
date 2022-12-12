@@ -68,5 +68,8 @@ function update(){
     else if (word.includes(letter)){
       tile.classList.add('present')
     }
+    else {
+      tile.classList.add('absent')
+    }
   }
 }
