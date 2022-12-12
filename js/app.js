@@ -31,6 +31,7 @@ function initialize(){
         let currTile = document.getElementById(row.toString() + '-' + col.toString())
         if (currTile.innerText == ""){
           currTile.innerText = e.code()
+          col += 1
         }
       }
     }
