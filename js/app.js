@@ -30,7 +30,7 @@ function initialize(){
       if(col < width){
         let currTile = document.getElementById(row.toString() + '-' + col.toString())
         if (currTile.innerText == ""){
-          currTile.innerText = e.code()
+          currTile.innerText = e.code[3]
           col += 1
         }
       }
