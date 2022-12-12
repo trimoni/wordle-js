@@ -6,3 +6,11 @@ let col = 0
 
 let gameOver = false
 let word = 'SQUID'
+
+window.onload = function(){
+  initialize()
+}
+
+function initialize(){
+  
+}
