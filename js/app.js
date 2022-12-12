@@ -35,5 +35,10 @@ function initialize(){
         }
       }
     }
+    else if(e.code == 'Backspace'){
+      if (0 < col && col <= width){
+        
+      }
+    }
   })
 }
