@@ -18,7 +18,7 @@ function initialize(){
       // <span id='0-0' class='tile' ></span>
       let tile = document.createElement('span')
       tile.id = r.toString() + '-' + c.toString()
-      tile.classList('tile')
+      tile.classList.add('tile')
       tile.innerText = 'p'
       document.getElementById('board').appendChild(tile)
     }
