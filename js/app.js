@@ -49,6 +49,13 @@ function initialize(){
       col = 0 // start at 0 for new row
     }
 
-    if (!gameOver && row == height)
+    if (!gameOver && row == height){
+      gameOver = true
+      document.getElementById('answer').innerText = word
+    }
   })
+}
+
+function update(){
+  
 }
