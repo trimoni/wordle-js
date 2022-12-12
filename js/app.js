@@ -23,4 +23,9 @@ function initialize(){
       document.getElementById('board').appendChild(tile)
     }
   }
+
+  document.addEventListener('keyup', (e) => {
+    if (gameOver) return
+    
+  })
 }
