@@ -57,5 +57,9 @@ function initialize(){
 }
 
 function update(){
-  
+  let correct = 0
+  for (let c = 0; c < width; c++){
+    let currTile = document.getElementById(row.toString() + '-' + col.toString())
+    let letter = currTile.innerText
+  }
 }
