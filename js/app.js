@@ -19,7 +19,7 @@ function initialize(){
       let tile = document.createElement('span')
       tile.id = r.toString() + '-' + c.toString()
       tile.classList.add('tile')
-      tile.innerText = 'p'
+      tile.innerText = ''
       document.getElementById('board').appendChild(tile)
     }
   }
