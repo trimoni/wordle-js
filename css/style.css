@@ -12,3 +12,9 @@ hr {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+#board {
+  width: 350px;
+  height: 420px;
+  background-color: green;
+}
