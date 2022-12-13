@@ -73,13 +73,9 @@ function update(){
     if (word[c] == letter){
       currTile.classList.add('correct')
       correct += 1
+      
     }
-    else if (word.includes(letter)){
-      currTile.classList.add('present')
-    }
-    else {
-      currTile.classList.add('absent')
-    }
+    
 
     if (correct == width){
       gameOver = true
