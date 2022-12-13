@@ -85,7 +85,7 @@ function update(){
     let currTile = document.getElementById(row.toString() + '-' + c.toString())
     let letter = currTile.innerText
     
-    if (word.includes(letter)){
+    if (word.includes(letter) && letterCount[letter] > 0){
       currTile.classList.add('present')
       letterCount[letter] -= 1
     }
