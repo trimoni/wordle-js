@@ -32,6 +32,12 @@ function initialize() {
     }
   }
 
+  let keyboard = [
+    ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+    ["A", "S", "D", "F", "G", "H", "J", "K", "L", " "],
+    ["Enter", "Z", "X", "C", "V", "B", "N", "M", "⌫" ]
+]
+
   document.addEventListener("keyup", (e) => {
     if (gameOver) return;
     if ("KeyA" <= e.code && e.code <= "KeyZ") {
