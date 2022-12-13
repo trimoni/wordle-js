@@ -75,6 +75,11 @@ function update() {
     guess += letter
   }
 
+  guess = guess.toLowerCase()
+  if (!guessList.includes(guess)){
+    
+  }
+
   let correct = 0;
   let letterCount = {};
   for (let i = 0; i < word.length; i++) {
