@@ -49,41 +49,45 @@ function initialize() {
       let key = currRow[j]
       keyTile.innerText = key
       if (key == 'Enter'){
-        
+
       }
     }
   }
 
   document.addEventListener("keyup", (e) => {
-    if (gameOver) return;
-    if ("KeyA" <= e.code && e.code <= "KeyZ") {
-      if (col < width) {
-        let currTile = document.getElementById(
-          row.toString() + "-" + col.toString()
-        );
-        if (currTile.innerText == "") {
-          currTile.innerText = e.code[3];
-          col += 1;
-        }
-      }
-    } else if (e.code == "Backspace") {
-      if (0 < col && col <= width) {
-        col -= 1;
-      }
+  })
+}
+
+function processInput(e){
+  if (gameOver) return
+  if ("KeyA" <= e.code && e.code <= "KeyZ") {
+    if (col < width) {
       let currTile = document.getElementById(
         row.toString() + "-" + col.toString()
       );
-      currTile.innerText = "";
-    } else if ((e.code = "Enter")) {
-      update();
+      if (currTile.innerText == "") {
+        currTile.innerText = e.code[3];
+        col += 1;
+      }
     }
+  } else if (e.code == "Backspace") {
+    if (0 < col && col <= width) {
+      col -= 1;
+    }
+    let currTile = document.getElementById(
+      row.toString() + "-" + col.toString()
+    );
+    currTile.innerText = "";
+  } else if ((e.code = "Enter")) {
+    update();
+  }
 
-    if (!gameOver && row == height) {
-      gameOver = true;
-      document.getElementById("answer").innerText = word;
-    }
-  });
-}
+  if (!gameOver && row == height) {
+    gameOver = true;
+    document.getElementById("answer").innerText = word;
+  }
+};
+
 
 function update() {
   let guess = ''
