@@ -41,7 +41,7 @@ function initialize() {
   for (let i = 0; i < keyboard.length; i++){
     let currRow = keyboard[i]
     let keyboardRow = document.createElement('div')
-    keyboard.classList.add('keyboard-row')
+    keyboardRow.classList.add('keyboard-row')
 
     for (let j = 0; j < currRow.length; j++){
       let keyTile = document.createElement('div')
