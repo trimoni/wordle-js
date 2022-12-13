@@ -78,3 +78,18 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
+.enter-key-tile {
+  /* box */
+  border: 1px solid lightgray;
+  width: 76px;
+  height: 40px;
+  margin: 1px;
+
+  /* text */
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
