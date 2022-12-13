@@ -45,6 +45,12 @@ function initialize() {
 
     for (let j = 0; j < currRow.length; j++){
       let keyTile = document.createElement('div')
+
+      let key = currRow[j]
+      keyTile.innerText = key
+      if (key == 'Enter'){
+        
+      }
     }
   }
 
