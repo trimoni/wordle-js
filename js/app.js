@@ -57,12 +57,18 @@ function initialize() {
       else if ('A' <= key && key <= 'Z'){
         keyTile.id = "Key" + key
       }
+      keyTile.addEventListener('click', processKey)
     }
   }
 
   document.addEventListener("keyup", (e) => {
     processInput(e)
   })
+}
+
+function processKey(){
+  let e = {'code': this.id}
+  processInput(e)
 }
 
 function processInput(e){
