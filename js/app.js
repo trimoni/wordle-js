@@ -58,6 +58,13 @@ function initialize() {
         keyTile.id = "Key" + key
       }
       keyTile.addEventListener('click', processKey)
+
+      if (key == 'Enter'){
+        keyTile.classList.add('enter-key-tile')
+      } else {
+        keyTile.classList.add('key-tile')
+      }
+      keyboardRow.appendChild(keyTile)
     }
   }
 
