@@ -77,7 +77,8 @@ function update() {
 
   guess = guess.toLowerCase()
   if (!guessList.includes(guess)){
-    
+    document.getElementById('answer').innerText = 'Not in word list'
+    return
   }
 
   let correct = 0;
