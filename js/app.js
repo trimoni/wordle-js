@@ -71,7 +71,8 @@ function update() {
 
   for (let c = 0; c < width; c++){
     let currTile = document.getElementById(row.toString() + '-' + c.toString())
-    
+    let letter = currTile.innerText
+    guess += letter
   }
 
   let correct = 0;
