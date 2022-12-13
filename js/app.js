@@ -66,6 +66,7 @@ function initialize() {
       }
       keyboardRow.appendChild(keyTile)
     }
+    document.body.appendChild(keyboardRow)
   }
 
   document.addEventListener("keyup", (e) => {
