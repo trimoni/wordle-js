@@ -66,6 +66,9 @@ function initialize() {
 }
 
 function update() {
+  let guess = ''
+  document.getElementById('answer').innerText = ''
+
   let correct = 0;
   let letterCount = {};
   for (let i = 0; i < word.length; i++) {
