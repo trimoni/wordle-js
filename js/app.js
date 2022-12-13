@@ -141,6 +141,10 @@ function update() {
     let letter = currTile.innerText;
     if (word[c] == letter) {
       currTile.classList.add("correct");
+
+      let keyTile = document.getElementById('Key' + letter)
+      keyTile.classList.remove('present')
+      keyTile.classList.add('correct')
       correct += 1;
       letterCount[letter] -= 1;
     }
@@ -156,6 +160,9 @@ function update() {
     if (!currTile.classList.contains("correct")) {
       if (word.includes(letter) && letterCount[letter] > 0) {
         currTile.classList.add("present");
+        let keyTile = document.getElementById('Key' + letter)
+        keyTile.classList.remove('present')
+        keyTile.classList.add('correct')
         letterCount[letter] -= 1;
       } else {
         currTile.classList.add("absent");
