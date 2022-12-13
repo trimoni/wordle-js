@@ -85,4 +85,22 @@ function update(){
       gameOver = true
     }
   }
+  for (let c = 0; c < width; c++){
+    let currTile = document.getElementById(row.toString() + '-' + c.toString())
+    let letter = currTile.innerText
+    if (word[c] == letter){
+      currTile.classList.add('correct')
+      correct += 1
+    }
+    else if (word.includes(letter)){
+      currTile.classList.add('present')
+    }
+    else {
+      currTile.classList.add('absent')
+    }
+
+    if (correct == width){
+      gameOver = true
+    }
+  }
 }
