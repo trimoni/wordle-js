@@ -49,12 +49,19 @@ function initialize() {
       let key = currRow[j]
       keyTile.innerText = key
       if (key == 'Enter'){
-
+        keyTile.id = 'Enter'
+      }
+      else if (key == '⌫'){
+        keyTile.id = 'Backspace'
+      }
+      else if ('A' <= key && key <= 'Z'){
+        keyTile.id = "Key" + key
       }
     }
   }
 
   document.addEventListener("keyup", (e) => {
+    processInput(e)
   })
 }
 
