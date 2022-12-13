@@ -58,6 +58,7 @@ function initialize(){
 
 function update(){
   let correct = 0
+  let letterCount = {}
   for (let c = 0; c < width; c++){
     let currTile = document.getElementById(row.toString() + '-' + c.toString())
     let letter = currTile.innerText
