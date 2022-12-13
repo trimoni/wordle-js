@@ -69,6 +69,11 @@ function update() {
   let guess = ''
   document.getElementById('answer').innerText = ''
 
+  for (let c = 0; c < width; c++){
+    let currTile = document.getElementById(row.toString() + '-' + c.toString())
+    
+  }
+
   let correct = 0;
   let letterCount = {};
   for (let i = 0; i < word.length; i++) {
