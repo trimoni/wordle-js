@@ -42,6 +42,10 @@ function initialize() {
     let currRow = keyboard[i]
     let keyboardRow = document.createElement('div')
     keyboard.classList.add('keyboard-row')
+
+    for (let j = 0; j < currRow.length; j++){
+      let keyTile = document.createElement('div')
+    }
   }
 
   document.addEventListener("keyup", (e) => {
